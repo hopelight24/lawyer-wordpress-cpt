@@ -1,1 +1,1 @@
-# Lawyer-CPT
+# Lawyer-CPT Wordpress Plugin
