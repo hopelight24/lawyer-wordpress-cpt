@@ -1,0 +1,77 @@
+.lawyer-grid-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+}
+.lawyer-grid-container a {
+    text-decoration: none;
+}
+.lawyer-grid-container .lawyer-item {
+    background-color: #fff;
+    color: #333333;
+    font-size: 16px;
+}
+.lawyer-poster {
+    margin-bottom: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+.lawyer-poster img {
+    width: 100%;
+}
+.lawyer-position {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.lawyer-name {
+    color: #CCA876;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.lawyer-desc {
+    margin-bottom: 20px;
+}
+.lawyer-desc p {
+    margin-top: 0;
+}
+.lawyer-social {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.lawyer-social a {
+    margin-right: 10px;
+}
+.lawyer-social a:hover {
+    color: #CCA876;
+}
+.lawyer-position,
+.lawyer-name,
+.lawyer-desc,
+.lawyer-social {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 400px) {
+    .lawyer-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .lawyer-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (min-width: 900px) {
+    .lawyer-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
